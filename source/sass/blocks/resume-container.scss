@@ -1,0 +1,32 @@
+@media (min-width: $desktop-width) {
+  .resume-container {
+    @include d-flex (nowrap, row, space-between, stretch);
+  }
+
+  .resume-container__column {
+    position: relative;
+
+    flex-shrink: 0;
+    flex-basis: calc(50% - 40px);
+
+    &--left {
+      padding-right: 40px;
+
+      // &::after {
+      //   @include abs-pseudo;
+      //
+      //   top: 5%;
+      //   right: -1px;
+      //
+      //   width: 2px;
+      //   height: 90%;
+      //
+      //   background-color: rgba(255, 255, 255, .1);
+      // }
+    }
+
+    &--right {
+      padding-left: 40px;
+    }
+  }
+}

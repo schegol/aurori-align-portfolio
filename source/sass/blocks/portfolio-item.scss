@@ -96,21 +96,21 @@
 
     z-index: 1;
 
-    &::before {
-      @include abs-pseudo;
-
-      top: -10px;
-      left: -10%;
-
-      width: 120%;
-      height: 115%;
-
-      border-radius: 20px;
-      background-color: #2e647d;
-
-      transform: skewY(-4deg);
-      z-index: -1;
-    }
+    // &::before {
+    //   @include abs-pseudo;
+    //
+    //   top: -10px;
+    //   left: -10%;
+    //
+    //   width: 120%;
+    //   height: 115%;
+    //
+    //   border-radius: 20px;
+    //   background-color: #2e647d;
+    //
+    //   transform: skewX(5deg);
+    //   z-index: -1;
+    // }
   }
 
   .portfolio-item__description {
