@@ -1,0 +1,61 @@
+.page-section {
+  padding: 40px 20px 30px;
+}
+
+.page-section__title {
+  @include reset;
+  @include text-shadow;
+
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-section__description {
+  @include reset;
+
+  padding-bottom: 45px;
+
+  font-weight: 400;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-section {
+    padding-top: 45px;
+  }
+
+  .page-section__title {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+  }
+
+  .page-section__description {
+    padding-bottom: 45px;
+
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-section {
+    padding-top: 55px;
+  }
+
+  .page-section__title {
+    margin-bottom: 35px;
+
+    font-size: 32px;
+  }
+
+  .page-section__description {
+    padding-bottom: 55px;
+
+    font-size: 20px;
+  }
+}

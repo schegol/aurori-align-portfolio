@@ -1,0 +1,31 @@
+.tags {
+  text-align: center;
+}
+
+.tags__heading {
+  @include reset;
+  @include text-shadow;
+
+  margin-bottom: 10px;
+}
+
+.tags__cluster {
+  @include reset;
+}
+
+.tags__item {
+  @include box-shadow;
+
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px 10px 5px;
+
+  background-color: lighten($bg-color, 25%);
+  border-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .tags {
+    text-align: left;
+  }
+}

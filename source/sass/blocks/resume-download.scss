@@ -1,0 +1,76 @@
+.resume-download {
+  position: relative;
+
+  padding-top: 30px;
+
+  &::before {
+    @include abs-pseudo;
+
+    top: -10px;
+    left: -10%;
+
+    width: 120%;
+    height: 123%;
+
+    border-radius: 20px;
+    background-color: rgba(lighten($bg-color, 20%), .2);
+
+    transform: skewY(-4deg);
+    z-index: 1;
+  }
+}
+
+.resume-download__content {
+  @include d-flex (nowrap, column, flex-start, center);
+}
+
+.resume-download__button {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 240px;
+
+  &:first-of-type {
+    margin: 0;
+  }
+}
+
+.resume-download__text {
+  @include reset;
+
+  max-width: 100%;
+  padding-bottom: 45px;
+
+  font-weight: 400;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .resume-download {
+    &::before {
+      left: 0;
+
+      width: 100%;
+    }
+  }
+
+  .resume-download__text {
+    padding-bottom: 45px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .resume-download__text {
+    padding-bottom: 55px;
+
+    font-size: 20px;
+  }
+
+  .resume-download__button {
+    font-size: 18px;
+  }
+}

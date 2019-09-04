@@ -1,0 +1,15 @@
+.contacts {
+  @include d-flex (nowrap, column, flex-start, center);
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include d-flex (nowrap, row, space-between, stretch);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    justify-content: space-around;
+  }
+}

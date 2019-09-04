@@ -1,0 +1,15 @@
+.footer {
+  @include reset;
+  @include d-flex (nowrap, column, center, flex-start);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $bg-color;
+}
+
+.footer__copyrights {
+  @include reset;
+
+  font-size: 16px;
+}

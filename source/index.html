@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aurori Align: адаптивная кроссбраузерная верстка веб-сайтов</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content-wrapper">
+      <div class="header__content container">
+        <div class="header__mobile-row">
+          <img class="header__logo" src="img/logo.svg" width="128" height="100" alt="Логотип Aurori Align">
+          <button class="header__toggle header__toggle--open header__toggle--no-js header__toggle--no-animation" type="button" id="menuToggle"><span class="header__toggle-span">—</span></button>
+        </div>
+        <nav class="header__navigation header__navigation--open">
+          <ul class="header__menu main-menu">
+            <li class="main-menu__item"><a class="main-menu__link" href="#portfolio">Портфолио</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#resume">Резюме</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="heading-section">
+      <h1 class="heading-section__title">Aurori Align: адаптивная верстка веб&#8209;сайтов</h1>
+    </section>
+  </header>
+  <main class="main">
+    <section class="page-section page-section--portfolio container">
+      <h2 class="page-section__title" id="portfolio">Портфолио</h2>
+      <div class="page-section__description-wrapper">
+        <p class="page-section__description">
+          Верстка всех макетов (кроме «Café Glitch») полностью совместима с Internet Explorer 11 и другими популярными браузерами. Адаптивные макеты могут комфортно использоваться на устройствах с любым размером экрана. Соблюдены принципы A11Y (доступность для людей с ограниченными возможностями, проработано управление с клавиатуры, прописаны нужные атрибуты для скринридеров) и прогрессивного улучшения (критический функционал, где возможно, доступен с выключенным JS). Верстка валидна, семантична.
+        </p>
+      </div>
+      <article class="portfolio-item">
+        <h2 class="visually-hidden">Макет «Пинк»</h2>
+        <section class="portfolio-item__mockup">
+          <h3 class="portfolio-item__mobile-title">Сайт приложения «Пинк»</h3>
+          <a class="portfolio-item__mockup-imageset" href="projects/pink/index.html" aria-label="Посмотреть проект">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/pink-desktop@1x.webp 1x, img/pink-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/pink-tablet@1x.webp 1x, img/pink-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pink-mobile@1x.webp 1x, img/pink-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/pink-desktop@1x.png 1x, img/pink-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/pink-tablet@1x.png 1x, img/pink-tablet@2x.png 2x">
+              <img class="portfolio-item__mockup-image" src="img/pink-mobile@1x.png" srcset="img/pink-mobile@2x.png 2x" alt="Скриншот проекта «АльбертМед»">
+            </picture>
+          </a>
+          <div class="portfolio-item__button-wrapper">
+            <a class="portfolio-item__button button" href="projects/pink/index.html" target="_blank">Посмотреть проект</a>
+            <a class="portfolio-item__button button" href="https://github.com/schegol/854209-pink-17" target="_blank">Исходники на Github</a>
+          </div>
+        </section>
+        <section class="portfolio-item__mockup-description">
+          <h3 class="portfolio-item__title">Сайт приложения «Пинк»</h3>
+          <p class="portfolio-item__description">
+            Учебный проект HTML Academy, «Профессиональный HTML/CSS, уровень&nbsp;2». Сверстаны все страницы и попапы для конкурсной формы. Раскладка блоков выполнена с помощью flexbox, адаптивная верстка под три разрешения в соответствии с концепцией «mobile-first». Именование классов по методологии БЭМ. Проведена ретинизация изображений, подключены их WEBP-версии с фоллбеком для браузеров без поддержки и векторный спрайт. Сборка проекта автоматизирована с помощью Gulp. В процессе работы использовался препроцессор Sass (синтаксис SCSS). Попапы и слайдер с отзывами на главной работают на чистом («ванильном») Javascript.
+          </p>
+          <div class="portfolio-item__tags tags">
+            <h4 class="tags__heading">Теги:</h4>
+            <p class="tags__cluster">
+              <span class="tags__item">HTML</span>
+              <span class="tags__item">CSS</span>
+              <span class="tags__item">JS</span>
+              <span class="tags__item">Flexbox</span>
+              <span class="tags__item">Mobile-first</span>
+              <span class="tags__item">Gulp</span>
+              <span class="tags__item">Sass</span>
+              <span class="tags__item">Ретинизация</span>
+              <span class="tags__item">БЭМ</span>
+              <span class="tags__item">Адаптивная верстка</span>
+            </p>
+          </div>
+        </section>
+      </article>
+      <article class="portfolio-item">
+        <h2 class="visually-hidden">Макет «Гарант Смета»</h2>
+        <section class="portfolio-item__mockup">
+          <h3 class="portfolio-item__mobile-title">Сайт сметчика «Гарант Смета»</h3>
+          <a class="portfolio-item__mockup-imageset" href="https://garant-smeta.ru" target="_blank" aria-label="Посмотреть проект">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/garant-smeta-desktop@1x.webp 1x, img/garant-smeta-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/garant-smeta-tablet@1x.webp 1x, img/garant-smeta-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/garant-smeta-mobile@1x.webp 1x, img/garant-smeta-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/garant-smeta-desktop@1x.png 1x, img/garant-smeta-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/garant-smeta-tablet@1x.png 1x, img/garant-smeta-tablet@2x.png 2x">
+              <img class="portfolio-item__mockup-image" src="img/garant-smeta-mobile@1x.png" srcset="img/garant-smeta-mobile@2x.png 2x" alt="Скриншот проекта «АльбертМед»">
+            </picture>
+          </a>
+          <div class="portfolio-item__button-wrapper">
+            <a class="portfolio-item__button button" href="https://garant-smeta.ru" target="_blank">Посмотреть проект</a>
+            <a class="portfolio-item__button button" href="https://github.com/schegol/garant-smeta-aurori-align" target="_blank">Исходники на Github</a>
+          </div>
+        </section>
+        <section class="portfolio-item__mockup-description">
+          <h3 class="portfolio-item__title">Сайт сметчика «Гарант Смета»</h3>
+          <p class="portfolio-item__description">
+            Одностраничный сайт с модальной формой. Раскладка блоков выполнена с помощью flexbox, адаптивная верстка (Bootstrap 4). Форма «Оставить заявку» и прочие интерактивные элементы работают на jQuery, анимированы с помощью jQuery и CSS. Функционирующие кастомные контактные формы (валидация Google reCaptcha и сбор данных с использованием технологии AJAX, отправка оповещения с собранными данными владельцу сайта с помощью PHP (PHP-сценарий отсутствует в репозитории Github из соображений безопасности)).
+          </p>
+          <div class="portfolio-item__tags tags">
+            <h4 class="tags__heading">Теги:</h4>
+            <p class="tags__cluster">
+              <span class="tags__item">HTML</span>
+              <span class="tags__item">CSS</span>
+              <span class="tags__item">JS</span>
+              <span class="tags__item">jQuery</span>
+              <span class="tags__item">AJAX</span>
+              <span class="tags__item">PHP</span>
+              <span class="tags__item">Flexbox</span>
+              <span class="tags__item">Bootstrap</span>
+              <span class="tags__item">animate.css</span>
+              <span class="tags__item">wow.js</span>
+              <span class="tags__item">Адаптивная верстка</span>
+            </p>
+          </div>
+        </section>
+      </article>
+      <article class="portfolio-item">
+        <h2 class="visually-hidden">Макет «АльбертМед»</h2>
+        <section class="portfolio-item__mockup">
+          <h3 class="portfolio-item__mobile-title">Сайт клиники «АльбертМед»</h3>
+          <a class="portfolio-item__mockup-imageset" href="projects/albertmed/index.html" aria-label="Посмотреть проект">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/albertmed-desktop@1x.webp 1x, img/albertmed-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/albertmed-tablet@1x.webp 1x, img/albertmed-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/albertmed-mobile@1x.webp 1x, img/albertmed-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/albertmed-desktop@1x.png 1x, img/albertmed-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/albertmed-tablet@1x.png 1x, img/albertmed-tablet@2x.png 2x">
+              <img class="portfolio-item__mockup-image" src="img/albertmed-mobile@1x.png" srcset="img/albertmed-mobile@2x.png 2x" alt="Скриншот проекта «АльбертМед»">
+            </picture>
+          </a>
+          <div class="portfolio-item__button-wrapper">
+            <a class="portfolio-item__button button" href="projects/albertmed/index.html">Посмотреть проект</a>
+            <a class="portfolio-item__button button" href="https://github.com/schegol/albertmed-aurori-align" target="_blank">Исходники на Github</a>
+          </div>
+        </section>
+        <section class="portfolio-item__mockup-description">
+          <h3 class="portfolio-item__title">Сайт клиники «АльбертМед»</h3>
+          <p class="portfolio-item__description">
+            Собственный дизайн макета (фотографии заимстованы из бесплатных разделов <a class="portfolio-item__description-link" href="https://www.dreamstime.com/" target="_blank">Dreamstime</a> и <a class="portfolio-item__description-link" href="https://www.freepik.com/" target="_blank">Freepik</a>). Сверстаны все страницы сайта. Раскладка блоков выполнена с помощью flexbox, адаптивная верстка (Bootstrap 4). Форма «Записаться на прием» и прочие интерактивные элементы работают на jQuery, анимированы с помощью jQuery и CSS.
+          </p>
+          <div class="portfolio-item__tags tags">
+            <h4 class="tags__heading">Теги:</h4>
+            <p class="tags__cluster">
+              <span class="tags__item">HTML</span>
+              <span class="tags__item">CSS</span>
+              <span class="tags__item">JS</span>
+              <span class="tags__item">jQuery</span>
+              <span class="tags__item">Flexbox</span>
+              <span class="tags__item">Bootstrap</span>
+              <span class="tags__item">animate.css</span>
+              <span class="tags__item">wow.js</span>
+              <span class="tags__item">Адаптивная верстка</span>
+            </p>
+          </div>
+        </section>
+      </article>
+      <article class="portfolio-item">
+        <h2 class="visually-hidden">Макет «Техномарт»</h2>
+        <section class="portfolio-item__mockup">
+          <h3 class="portfolio-item__mobile-title">Интернет-магазин «Техномарт»</h3>
+          <a class="portfolio-item__mockup-imageset" href="projects/technomart/index.html" aria-label="Посмотреть проект">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/technomart-desktop@1x.webp 1x, img/technomart-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/technomart-tablet@1x.webp 1x, img/technomart-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/technomart-mobile@1x.webp 1x, img/technomart-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/technomart-desktop@1x.png 1x, img/technomart-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/technomart-tablet@1x.png 1x, img/technomart-tablet@2x.png 2x">
+              <img class="portfolio-item__mockup-image" src="img/technomart-mobile@1x.png" srcset="img/technomart-mobile@2x.png 2x" alt="Скриншот проекта «Техномарт»">
+            </picture>
+          </a>
+          <div class="portfolio-item__button-wrapper">
+            <a class="portfolio-item__button button" href="projects/technomart/index.html">Посмотреть проект</a>
+            <a class="portfolio-item__button button" href="https://github.com/schegol/854209-technomart-25" target="_blank">Исходники на Github</a>
+          </div>
+        </section>
+        <section class="portfolio-item__mockup-description">
+          <h3 class="portfolio-item__title">Интернет-магазин «Техномарт»</h3>
+          <p class="portfolio-item__description">
+            Учебный проект HTML Academy, «Профессиональный HTML/CSS, уровень&nbsp;1». Сверстаны главная страница, страница каталога и интерактивные формы. Раскладка блоков выполнена с помощью flexbox, фиксированная верстка. Формы («Заблудились?», «Товар добавлен в корзину» и карта) работают на чистом JS, анимированы с помощью CSS. Слайдеры работают на чистом CSS.
+          </p>
+          <div class="portfolio-item__tags tags">
+            <h4 class="tags__heading">Теги:</h4>
+            <p class="tags__cluster">
+              <span class="tags__item">HTML</span>
+              <span class="tags__item">CSS</span>
+              <span class="tags__item">JS</span>
+              <span class="tags__item">Flexbox</span>
+              <span class="tags__item">Фиксированная верстка</span>
+            </p>
+          </div>
+        </section>
+      </article>
+    </section>
+    <section class="page-section page-section--resume container">
+      <h2 class="page-section__title" id="resume">Резюме</h2>
+      <p class="page-section__description">
+        Меня зовут Владислав, я начинающий веб-разработчик из Санкт-Петербурга. Ниже представлена основная информация обо мне.
+      </p>
+      <section class="resume-unit">
+        <h3 class="resume-unit__heading">Навыки и среда</h3>
+        <div class="resume-unit__wrapper">
+          <ul class="resume-unit__list">
+            <li class="resume-unit__item">HTML, CSS (flexbox, grid, анимация)</li>
+            <li class="resume-unit__item">Основы JS, jQuery</li>
+            <li class="resume-unit__item">Gulp и npm</li>
+            <li class="resume-unit__item">Sass (SCSS)</li>
+            <li class="resume-unit__item">Именование классов по БЭМ</li>
+            <li class="resume-unit__item">Git/Github (в т.ч. через консоль)</li>
+            <li class="resume-unit__item">Ретинизация</li>
+            <li class="resume-unit__item">Bootstrap 4, CMS</li>
+            <li class="resume-unit__item">A11Y (accessibility) и семантичность</li>
+            <li class="resume-unit__item">Понимание SVG, векторные спрайты</li>
+            <li class="resume-unit__item">Adobe Photoshop и Illustrator</li>
+            <li class="resume-unit__item">Прогрессивное улучшение/деградация</li>
+            <li class="resume-unit__item">Mobile-first</li>
+            <li class="resume-unit__item">Английский язык (upper&#8209;intermediate)</li>
+          </ul>
+        </div>
+      </section>
+      <section class="resume-unit">
+        <h3 class="resume-unit__heading">Образование</h3>
+        <div class="resume-unit__wrapper">
+          <ul class="resume-unit__list">
+            <li class="resume-unit__item resume-unit__item--education resume-unit__item--big">
+              <span class="resume-unit__item-date">2010 — 2016</span> БГТУ «Военмех» им. Д.Ф. Устинова, факультет «Информационные и управляющие системы», квалификация специалиста (инженер)
+            </li>
+            <li class="resume-unit__item resume-unit__item--education">
+              <span class="resume-unit__item-date">05 — 07.2019</span> Профессиональный онлайн курс HTML и CSS, уровень&nbsp;1
+            </li>
+            <li class="resume-unit__item resume-unit__item--education">
+              <span class="resume-unit__item-date">07 — 09.2019</span> Профессиональный онлайн курс HTML и CSS, уровень&nbsp;2
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="resume-unit">
+        <h3 class="resume-unit__heading">Личные качества</h3>
+        <div class="resume-unit__wrapper">
+          <ul class="resume-unit__list resume-unit__list--qualities">
+            <li class="resume-unit__item resume-unit__item--qualities">Здоровый перфекционизм</li>
+            <li class="resume-unit__item resume-unit__item--qualities">Исполнительность</li>
+            <li class="resume-unit__item resume-unit__item--qualities">Вежливость</li>
+            <li class="resume-unit__item resume-unit__item--qualities">Неконфликтность</li>
+            <li class="resume-unit__item resume-unit__item--qualities">Обучаемость</li>
+            <li class="resume-unit__item resume-unit__item--qualities">Тяга к знаниям</li>
+          </ul>
+        </div>
+      </section>
+      <section class="resume-download">
+        <h3 class="visually-hidden">Резюме в формате PDF</h3>
+        <div class="resume-download__content">
+          <p class="resume-download__text">
+            Скачать полное резюме в формате PDF можно по ссылке ниже:
+          </p>
+          <a class="resume-download__button button" href="misc/resume.pdf" download>Скачать резюме</a>
+        </div>
+      </section>
+    </section>
+    <section class="page-section page-section--contacts container">
+      <h2 class="page-section__title" id="contacts">Контакты</h2>
+      <div class="contacts">
+        <div class="contacts-list__wrapper">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="tel:+79062428397" target="_blank">
+                <div class="contacts-list__item-img">
+                  <svg class="contacts-list__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="50"
+                  	 viewBox="0 0 20.3 20" xml:space="preserve">
+                  	<g>
+                  		<g>
+                  			<g>
+                  				<path fill="#ffffff" d="M10,5c0-0.6-0.4-1-1-1C6.2,4,4,6.2,4,9c0,0.6,0.4,1,1,1s1-0.4,1-1c0-1.7,1.3-3,3-3C9.6,6,10,5.6,10,5z"/>
+                  				<path fill="#ffffff" d="M10,1c0-0.6-0.4-1-1-1C4,0,0,4,0,9c0,0.6,0.4,1,1,1s1-0.4,1-1c0-3.9,3.1-7,7-7C9.6,2,10,1.6,10,1z"/>
+                  				<path fill="#ffffff" d="M0.1,14.6C0,14.9,0,15.1,0,15.4l0,0C0,17.9,2.1,20,4.6,20C13.1,20,20,13.1,20,4.6C20,2.1,17.9,0,15.4,0
+                  					c-0.3,0-0.5,0-0.8,0.1c-0.2,0-0.5,0.1-0.7,0.2c-0.3,0.1-0.6,0.4-0.6,0.7l-1.4,5.9c-0.1,0.3,0,0.7,0.3,0.9C12.3,8,12.3,8,13.6,8.6
+                  					c-1,2.2-2.7,3.9-4.9,4.9C8,12.3,8,12.3,7.9,12.2c-0.2-0.2-0.6-0.3-0.9-0.3l-6,1.4c-0.3,0.1-0.6,0.3-0.7,0.6
+                  					C0.2,14.1,0.1,14.4,0.1,14.6z"/>
+                  			</g>
+                  		</g>
+                  	</g>
+                  </svg>
+                </div>
+                <span class="contacts-list__item-text">+7 (981) 163-20-17</span>
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="mailto:info@aurori-align.ru" target="_blank">
+                <div class="contacts-list__item-img">
+                  <svg class="contacts-list__item-icon" version="1.1" viewBox="0 0 64 64" width="50" height="50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                      <path fill="#ffffff" d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z"/>
+                      <path fill="#ffffff" d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z"/>
+                    </g>
+                  </svg>
+                </div>
+                <span class="contacts-list__item-text">info@aurori-align.ru</span>
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="https://vk.com/vlad_aurori" target="_blank">
+                <div class="contacts-list__item-img">
+                  <svg class="contacts-list__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="50" height="50" viewBox="0 0 96.496 96.496"
+                  	 xml:space="preserve">
+                  	<g>
+                  		<path fill="#ffffff" d="M92.499,65.178c-2.873-3.446-6.254-6.387-9.453-9.51c-2.886-2.815-3.068-4.448-0.748-7.697
+                  			c2.532-3.546,5.255-6.956,7.81-10.486c2.385-3.299,4.823-6.589,6.078-10.539c0.796-2.513,0.092-3.623-2.485-4.063
+                  			c-0.444-0.077-0.903-0.081-1.355-0.081l-15.289-0.018c-1.883-0.028-2.924,0.793-3.59,2.462c-0.899,2.256-1.826,4.51-2.897,6.687
+                  			c-2.43,4.936-5.144,9.707-8.949,13.747c-0.839,0.891-1.767,2.017-3.169,1.553c-1.754-0.64-2.271-3.53-2.242-4.507l-0.015-17.647
+                  			c-0.34-2.521-0.899-3.645-3.402-4.135l-15.882,0.003c-2.12,0-3.183,0.819-4.315,2.145c-0.653,0.766-0.85,1.263,0.492,1.517
+                  			c2.636,0.5,4.121,2.206,4.515,4.849c0.632,4.223,0.588,8.463,0.224,12.703c-0.107,1.238-0.32,2.473-0.811,3.629
+                  			c-0.768,1.817-2.008,2.187-3.637,1.069c-1.475-1.012-2.511-2.44-3.525-3.874c-3.809-5.382-6.848-11.186-9.326-17.285
+                  			c-0.716-1.762-1.951-2.83-3.818-2.859c-4.587-0.073-9.175-0.085-13.762,0.004c-2.76,0.052-3.583,1.392-2.459,3.894
+                  			c4.996,11.113,10.557,21.917,17.816,31.759c3.727,5.051,8.006,9.51,13.534,12.67c6.265,3.582,13.009,4.66,20.112,4.328
+                  			c3.326-0.156,4.325-1.021,4.479-4.336c0.104-2.268,0.361-4.523,1.48-6.561c1.098-2,2.761-2.381,4.678-1.137
+                  			c0.959,0.623,1.767,1.416,2.53,2.252c1.872,2.048,3.677,4.158,5.62,6.137c2.437,2.48,5.324,3.945,8.954,3.646L93.744,75.5
+                  			c2.264-0.148,3.438-2.924,2.138-5.451C94.969,68.279,93.771,66.703,92.499,65.178z"/>
+                  	</g>
+                  </svg>
+                </div>
+                <span class="contacts-list__item-text">vk.com/vlad_aurori</span>
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-link" href="https://github.com/schegol" target="_blank">
+                <div class="contacts-list__item-img">
+                  <svg class="contacts-list__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="50" viewBox="0 0 438.549 438.549" xml:space="preserve">
+                  	<g>
+                  		<path fill="#ffffff" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+                  			c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+                  			c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+                  			c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+                  			c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+                  			c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+                  			c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+                  			c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+                  			c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+                  			c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+                  			c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+                  			c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+                  			c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+                  			c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+                  			c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+                  			c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+                  			c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+                  			c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+                  			c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+                  			C438.536,184.851,428.728,148.168,409.132,114.573z"/>
+                  	</g>
+                  </svg>
+                </div>
+                <span class="contacts-list__item-text">github.com/schegol</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="author">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/author@1x.webp 1x, img/author@2x.webp 2x">
+            <source type="image/webp" srcset="img/author-mobile@1x.webp 1x, img/author-mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/author@1x.jpg 1x, img/author@2x.jpg 2x">
+            <img class="author__photo" src="img/author-mobile@1x.jpg" srcset="img/author-mobile@2x.jpg 2x" alt="Фото разработчика">
+          </picture>
+          <span class="author__name">Владислав</span>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyrights">
+        Aurori Align, 2019
+      </p>
+    </div>
+  </footer>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

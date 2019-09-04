@@ -1,0 +1,67 @@
+@keyframes fade-in-left {
+  0% {
+    left: -7%;
+
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+
+    opacity: 1;
+  }
+}
+
+.heading-section {
+  @include d-flex (nowrap, column, center, center);
+
+  position: relative;
+
+  height: 100px;
+  min-height: 200px;
+}
+
+
+.heading-section__title {
+  @include reset;
+
+  position: relative;
+
+  align-self: stretch;
+  padding: 0 20px;
+
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+  text-shadow: 0 0 5px #000,
+               4px 4px 8px rgba(0, 0, 0, .7),
+               4px -4px 8px rgba(0, 0, 0, .7),
+               -4px 4px 8px rgba(0, 0, 0, .7),
+               -4px -4px 8px rgba(0, 0, 0, .7);
+
+  opacity: 0;
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+
+@media (min-width: $tablet-width) {
+  .heading-section {
+    min-height: 250px;
+  }
+
+  .heading-section__title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-section {
+    min-height: 320px;
+  }
+
+  .heading-section__title {
+    font-size: 48px;
+  }
+}

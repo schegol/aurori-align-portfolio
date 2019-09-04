@@ -1,0 +1,25 @@
+.author {
+  @include reset;
+  @include d-flex (nowrap, column, flex-start, center);
+}
+
+.author__photo {
+  @include box-shadow;
+
+  border: 3px solid lighten($bg-color, 25%);
+  border-radius: 50%;
+}
+
+.author__name {
+  font-size: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .author__photo {
+    margin-bottom: 5px;
+  }
+
+  .author__name {
+    font-size: 32px;
+  }
+}
