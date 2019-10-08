@@ -26,6 +26,8 @@
   &:hover,
   &:focus {
     background-image: linear-gradient(to bottom, lighten(rgba($bg-color, 0.8), 45%), darken(rgba($bg-color, 0.8), 5%));
+
+    outline: none;
   }
 
   &:active {

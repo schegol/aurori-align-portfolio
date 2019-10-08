@@ -37,6 +37,12 @@
   border-radius: 5%;
 }
 
+.portfolio-item__mockup-imageset {
+  &:focus {
+    outline: none;
+  }
+}
+
 .portfolio-item__button-wrapper {
   @include d-flex (nowrap, column, flex-start, center);
 
@@ -156,8 +162,8 @@
     &::before {
       @include abs-pseudo;
 
-      top: 0;
-      left: 0;
+      top: -1px;
+      left: -1px;
       z-index: 3;
 
       width: 452px;
@@ -194,11 +200,13 @@
     }
   }
 
-  .portfolio-item__mockup:hover .portfolio-item__mockup-imageset::before {
+  .portfolio-item__mockup:hover .portfolio-item__mockup-imageset::before,
+  .portfolio-item__mockup-imageset--focused::before {
     transform: scale(1.08);
   }
 
-  .portfolio-item__mockup:hover .portfolio-item__mockup-imageset::after{
+  .portfolio-item__mockup:hover .portfolio-item__mockup-imageset::after,
+  .portfolio-item__mockup-imageset--focused::after {
     opacity: 0;
   }
 

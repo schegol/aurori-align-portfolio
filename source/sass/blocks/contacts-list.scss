@@ -20,6 +20,10 @@
 
 .contacts-list__item-link {
   @include d-flex (wrap, row, flex-start, center);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .contacts-list__item-img {

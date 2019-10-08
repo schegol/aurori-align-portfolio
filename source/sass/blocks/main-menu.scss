@@ -40,6 +40,8 @@
   &:hover,
   &:focus {
     color: $brand-color;
+
+    outline: none;
   }
 
   &:active {
